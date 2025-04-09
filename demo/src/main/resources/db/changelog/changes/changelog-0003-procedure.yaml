@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 8
+      author: katysha
+      changes:
+        - createProcedure:
+            path: /sql/active_orders_migration_procedure.sql
+

@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 14
+      author: katysha
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                tableName: item
+      changes:
+        - addColumn:
+            schemaName: public
+            tableName: item
+            columns:
+              - column:
+                  name: product_category
+                  type: varchar(50)
+                  constraints:
+                    nullable: true

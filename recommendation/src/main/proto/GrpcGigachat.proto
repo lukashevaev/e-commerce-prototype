@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.bubusyaka.recommendation;
+option java_package = "com.bubusyaka.recommendation.comp.grpc";
+
+message GRPCRequest {
+  string message = 1;
+}
+
+message GRPCResponse {
+  string response = 1;
+}
+
+service GrpcService {
+  rpc ProcessRequest(stream GRPCRequest) returns (stream GRPCResponse);
+}

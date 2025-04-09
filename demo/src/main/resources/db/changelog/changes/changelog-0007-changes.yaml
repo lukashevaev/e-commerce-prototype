@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 12
+      author: katysha
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+          - tableExists:
+              tableName: users_table
+      changes:
+        - addColumn:
+            schemaName: public
+            tableName: users_table
+            columns:
+              - column:
+                  name: role
+                  type: varchar(50)
+                  constraints:
+                    nullable: true

@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 9
+      author: katysha
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                tableName: users_table
+      changes:
+        - createTable:
+            schemaName: public
+            tableName: users_table
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: user_name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: BIGINT
+              - column:
+                  name: city
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+

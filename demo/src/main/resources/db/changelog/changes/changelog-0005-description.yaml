@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10
+      author: katysha
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                tableName: orders
+      changes:
+        - addColumn:
+            schemaName: public
+            tableName: orders
+            columns:
+              - column:
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    nullable: true
