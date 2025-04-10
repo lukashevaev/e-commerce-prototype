@@ -25,6 +25,7 @@
     <modules>
         <module>demo</module>
         <module>recommendation</module>
+        <module>kafka_producer</module>
     </modules>
 
 </project>
