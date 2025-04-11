@@ -9,7 +9,7 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>kafka_producer</artifactId>
+	<artifactId>kafka-producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka_producer</name>
 	<description>Demo project for Spring Boot</description>
