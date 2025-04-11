@@ -24,7 +24,7 @@
 
     <modules>
         <module>commerce-core</module>
-        <module>ai-recomendation-helper</module>
+        <module>ai-recommendation-helper</module>
         <module>kafka-producer</module>
     </modules>
 
