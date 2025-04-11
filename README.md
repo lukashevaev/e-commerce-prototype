@@ -8,9 +8,10 @@ E-COMMERCE-PROTOTYPE is an e-commerce system which consists of various marketpla
 * ai-recommendation-helper: A recommendation system based on GigaChat used to stimulate additional sales. Recommends products to users based on their previous purchases.
 
 ### Features
-* Stores data in PostgreSQL.
-* Configuring application logging and uploading metrics using Prometheus.
-* Generates new orders using Apache Kafka.
+* Stores order detailes in PostgreSQL.
+* Configuring metrics calculation using Prometheus.
+* Emulates order creation using Apache Kafka.
 * Makes a list of recommendations using GigaChat.
-* Uses HTTP and GRPC protocols.
-* Caching systems - Caffeine and Redis.
+* Uses HTTP (orders API, recommendations, authentication) and GRPC (bidirectional streaming for recommendaion service) protocols.
+* Caching implementations - Caffeine and Redis.
+* Uses CriteriaAPI to find most popular orders over a given time period with several optional parameters.
