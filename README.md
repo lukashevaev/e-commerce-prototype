@@ -15,3 +15,5 @@ E-COMMERCE-PROTOTYPE is an e-commerce system which consists of various marketpla
 * Uses HTTP (orders API, recommendations, authentication) and GRPC (bidirectional streaming for recommendaion service) protocols.
 * Caching implementations - Caffeine and Redis.
 * Uses CriteriaAPI to find most popular orders over a given time period with several optional parameters.
+
+![project-diagram](https://github.com/user-attachments/assets/f517da0e-8d61-4057-bf03-71be55e2f798)
